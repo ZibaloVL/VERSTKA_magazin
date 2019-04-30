@@ -12,6 +12,39 @@
          font-weight: normal;
 }
 */
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.eot");
+  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url("../fonts/Lobster_1_4/Lobster_1_4.eot");
+  src: url("../fonts/Lobster_1_4/Lobster_1_4.woff") format("woff"), url("../fonts/Lobster_1_4/Lobster_1_4.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Myriad';
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.h1 {
+  font-family: "BebasNeue";
+  font-size: 21px;
+}
+.h2 {
+  font-family: "Lobster";
+  font-size: 21px;
+}
+.h3 {
+  font-family: "Myriad";
+  font-size: 21px;
+}
 body,
 div,
 dl,
@@ -110,15 +143,15 @@ img {
   height: auto;
 }
 .wrapper {
-  max-width: 1160px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 720px) {
   .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .debugGrid {
@@ -128,36 +161,36 @@ img {
 }
 .debugGrid > div {
   height: inherit;
-  max-width: 1160px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 720px) {
   .debugGrid > div {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 720px) {
   .debugGrid > div {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 .debugGrid > div > div {
   height: inherit;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 .debugGrid > div > div > div {
   box-sizing: border-box;
   word-wrap: break-word;
-  margin-left: 5px;
-  margin-right: 5px;
-  width: calc(8.333333333333334% - 10px);
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(8.333333333333334% - 16px);
   height: inherit;
   outline: 1px solid #f90;
   background: rgba(0, 0, 0, 0.2);
