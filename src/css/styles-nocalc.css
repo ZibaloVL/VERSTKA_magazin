@@ -1,50 +1,5 @@
 /* подключаем сетку в px */
 /* используем её примеси */
-/*здесь прописанные общие стили*/
-/*
-
-@font-face {
-	font-family: 'BariolRegular';
-	src: url("../fonts/BariolRegular.eot");
-    src: url("../fonts/BariolRegular.woff") format("woff"),
-         url("../fonts/BariolRegular.ttf") format("truetype");
-         font-style: normal;
-         font-weight: normal;
-}
-*/
-@font-face {
-  font-family: 'BebasNeue';
-  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.eot");
-  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'Lobster';
-  src: url("../fonts/Lobster_1_4/Lobster_1_4.eot");
-  src: url("../fonts/Lobster_1_4/Lobster_1_4.woff") format("woff"), url("../fonts/Lobster_1_4/Lobster_1_4.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'Myriad';
-  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
-  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-.h1 {
-  font-family: "BebasNeue";
-  font-size: 21px;
-}
-.h2 {
-  font-family: "Lobster";
-  font-size: 21px;
-}
-.h3 {
-  font-family: "Myriad";
-  font-size: 21px;
-}
 body,
 div,
 dl,
@@ -142,6 +97,39 @@ img {
   max-width: 100%;
   height: auto;
 }
+/*здесь прописанные общие стили*/
+/*
+
+@font-face {
+	font-family: 'BariolRegular';
+	src: url("../fonts/BariolRegular.eot");
+    src: url("../fonts/BariolRegular.woff") format("woff"),
+         url("../fonts/BariolRegular.ttf") format("truetype");
+         font-style: normal;
+         font-weight: normal;
+}
+*/
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.eot");
+  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url("../fonts/Lobster_1_4/Lobster_1_4.eot");
+  src: url("../fonts/Lobster_1_4/Lobster_1_4.woff") format("woff"), url("../fonts/Lobster_1_4/Lobster_1_4.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Myriad';
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
@@ -194,4 +182,21 @@ img {
   height: inherit;
   outline: 1px solid #f90;
   background: rgba(0, 0, 0, 0.2);
+}
+body {
+  background-color: #3ac4b9;
+  font-family: 'BebasNeue';
+}
+header {
+  background-color: #ffffff;
+}
+header .header .logo {
+  font-family: "Lobster";
+  font-size: 49px;
+  color: #3bc3b5;
+}
+header .header .d3 form input:after {
+  content: "\f002";
+  font-family: 'FontAwesome';
+  font-size: 16px;
 }

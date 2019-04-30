@@ -1,6 +1,8 @@
+.reset();
 @import "project.less";
 
-.reset();
+
+
 
 .wrapper{
     .wrapper();
@@ -9,4 +11,45 @@
 
 .debugGrid{
     .debug(rgba(0, 0, 0, 0.2), 1px solid #f90)
+}
+
+body{
+    background-color: @color_background;
+    font-family: 'BebasNeue';
+}
+
+header{
+    background-color: @color_white;
+    .header{
+        .logo{
+            font-family: "Lobster";
+            font-size: 49px;
+            color:@color_logo;
+        }
+        
+        .d3 {
+            
+            
+            form {
+                input, button{                            
+                    }
+                input {
+                    &:after {
+                      content: "\f002";
+                      font-family: 'FontAwesome';
+                      font-size: 16px;
+                    
+                    }
+                }
+                }
+            
+            
+            
+        }
+         
+        
+        
+         
+         
+    }
 }
