@@ -21,31 +21,54 @@ body{
 header{
     background-color: @color_white;
     .header{
+		
+		.row-flex();
+		padding:10px 5px 10px 20px;
+		
+		
         .logo{
+			.col();
+			.size(2);
             font-family: "Lobster";
             font-size: 49px;
             color:@color_logo;
         }
         
-        .d3 {
-            
-            
+		.d3{
+			.col();
+			.size(8);
+			text-align: center;
+			align-self: center;
+			
             form {
-                input, button{                            
-                    }
+                
                 input {
-                    &:after {
-                      content: "\f002";
-                      font-family: 'FontAwesome';
-                      font-size: 16px;
-                    
-                    }
+					width: 434px;
+					height: 31px;
+					
+
                 }
-                }
-            
-            
-            
-        }
+            }
+		}
+		.bascet{
+			.col();
+			.size(1);
+			text-align: right;
+			align-self: center;
+				img{
+				 
+				}	
+		} 
+        
+		.total{
+				.col();
+				.size(1);
+				text-align: left;
+				align-self: center;
+				color:@color_summa;
+				font-size: 33px;
+				font-family: 'BebasNeue';
+		}
          
         
         

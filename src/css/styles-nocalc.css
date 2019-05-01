@@ -190,13 +190,54 @@ body {
 header {
   background-color: #ffffff;
 }
+header .header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1.35%;
+  margin-right: -1.35%;
+  padding: 10px 5px 10px 20px;
+}
 header .header .logo {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.35%;
+  margin-right: 1.35%;
+  width: 13.96666667%;
   font-family: "Lobster";
   font-size: 49px;
   color: #3bc3b5;
 }
-header .header .d3 form input:after {
-  content: "\f002";
-  font-family: 'FontAwesome';
-  font-size: 16px;
+header .header .d3 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.35%;
+  margin-right: 1.35%;
+  width: 63.96666667%;
+  text-align: center;
+  align-self: center;
+}
+header .header .d3 form input {
+  width: 434px;
+  height: 31px;
+}
+header .header .bascet {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.35%;
+  margin-right: 1.35%;
+  width: 5.63333333%;
+  text-align: right;
+  align-self: center;
+}
+header .header .total {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 1.35%;
+  margin-right: 1.35%;
+  width: 5.63333333%;
+  text-align: left;
+  align-self: center;
+  color: #a1a1a1;
+  font-size: 33px;
+  font-family: 'BebasNeue';
 }
