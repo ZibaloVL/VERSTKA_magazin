@@ -68,11 +68,42 @@ header{
 				color:@color_summa;
 				font-size: 33px;
 				font-family: 'BebasNeue';
-		}
-         
-        
-        
-         
-         
+		} 
     }
 }
+
+#mainMeniu{
+    background-color: @color_meniuMain;
+    
+    .navMeniu{
+    
+        &_Main{
+                .row-flex();
+
+                ul{
+                    .col();
+                    .size(12);
+                    padding: 10px 0;
+                    
+
+                    li{
+                        display:inline;
+                        font-size: 21px;
+                        padding:0 20px;
+                        box-sizing: border-box;
+                        &:not(:last-of-type){
+                            border-right: 2px solid;
+                            border-color: @color_white;
+                           
+                        }
+                        a{
+                            text-decoration: none;
+                            color:@color_white;
+                        
+                        }
+                    }
+                }
+        }
+    }
+}
+
