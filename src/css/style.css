@@ -10,6 +10,9 @@
          font-weight: normal;
 }
 */
+h2 {
+  font-size: 61px;
+}
 @font-face {
   font-family: 'BebasNeue';
   src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.eot");

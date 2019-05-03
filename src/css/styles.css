@@ -109,6 +109,9 @@ img {
          font-weight: normal;
 }
 */
+h2 {
+  font-size: 61px;
+}
 @font-face {
   font-family: 'BebasNeue';
   src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.eot");
@@ -271,4 +274,43 @@ header .header .total {
 #mainMeniu .navMeniu_Main ul li a {
   text-decoration: none;
   color: #ffffff;
+}
+#slidesMain {
+  color: #ffffff;
+}
+#slidesMain .slides .slide {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+  justify-content: center;
+}
+#slidesMain .slides .slide div {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+#slidesMain .slides .slide .img {
+  width: calc(41.66666666666667% - 16px);
+}
+#slidesMain .slides .slide .slide_text {
+  width: calc(41.66666666666667% - 16px);
+}
+#slidesMain .slides .slide .slide_text p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#slidesMain .slides .slide .slide_text button {
+  width: 139px;
+  height: 46px;
+  border-radius: 5px;
+  background: space;
+  font-size: 27px;
+  color: #ffffff;
+  font-family: 'BebasNeue';
+  border-width: 3px;
 }
