@@ -170,29 +170,43 @@ header{
     .lineSlides{
         .row-flex();
         
+        
         .lineSlide{
             
             .col();
             .size(4);
+            padding: 27px 0 29px 0;
             
-            .img{
-                text-align: center;
+            
+            .row{
+                .row-flex();
                 
-            }
-            .text{
-                float: right;
-                text-align: left;
-                margin: 47px;
-                
-                h4{
-                    line-height: 25px;
+                .img{
+                    .col();
+                    .size(7);
+                    text-align: center;
+
                 }
-                .batton{
-                    font-size: 19px;
-                    background-color: @color_buttonShop;
-                    display: inline-flex;
-                    align-items: center; 
-                    color:@color_white;
+                .text{
+                    .col();
+                    margin-top: 25px;
+
+                    h4{
+                        line-height: 25px;
+                    }
+                    .batton{
+                        margin-top:15px;
+                        font-size: 19px;
+                        background-color: @color_buttonShop;
+                        display: inline-flex;
+                        align-items: center; 
+                        justify-content: center;
+                        color:@color_white;
+                        
+                        width: 59px;
+	                    height: 32px;
+	                    border-radius: 3px;
+                    }
                 }
             }
         }
