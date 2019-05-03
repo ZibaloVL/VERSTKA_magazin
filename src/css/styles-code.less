@@ -112,7 +112,7 @@ header{
     
     .slides{
         
-        
+        margin-bottom: 45px;
         .slide{
             .row-flex();
             justify-content: start;
@@ -164,4 +164,40 @@ header{
         
     }
 }
+#lineSlide{
+    color: @color_nameProduct;
+    background-color:  @color_white;
+    .lineSlides{
+        .row-flex();
+        
+        .lineSlide{
+            
+            .col();
+            .size(4);
+            
+            .img{
+                text-align: center;
+                
+            }
+            .text{
+                float: right;
+                text-align: left;
+                margin: 47px;
+                
+                h4{
+                    line-height: 25px;
+                }
+                .batton{
+                    font-size: 19px;
+                    background-color: @color_buttonShop;
+                    display: inline-flex;
+                    align-items: center; 
+                    color:@color_white;
+                }
+            }
+        }
+    }
+}
+
+
 

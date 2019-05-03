@@ -112,6 +112,9 @@ img {
 h2 {
   font-size: 61px;
 }
+h4 {
+  font-size: 27px;
+}
 @font-face {
   font-family: 'BebasNeue';
   src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.eot");
@@ -278,6 +281,9 @@ header .header .total {
 #slidesMain {
   color: #ffffff;
 }
+#slidesMain .slides {
+  margin-bottom: 45px;
+}
 #slidesMain .slides .slide {
   display: flex;
   flex-wrap: wrap;
@@ -327,4 +333,39 @@ header .header .total {
   border-width: 3px;
   border: 3px solid;
   text-align: center;
+}
+#lineSlide {
+  color: #afafaf;
+  background-color: #ffffff;
+}
+#lineSlide .lineSlides {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+#lineSlide .lineSlides .lineSlide {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(33.333333333333336% - 16px);
+}
+#lineSlide .lineSlides .lineSlide .img {
+  text-align: center;
+}
+#lineSlide .lineSlides .lineSlide .text {
+  float: right;
+  text-align: left;
+  margin: 47px;
+}
+#lineSlide .lineSlides .lineSlide .text h4 {
+  line-height: 25px;
+}
+#lineSlide .lineSlides .lineSlide .text .batton {
+  font-size: 19px;
+  background-color: #3cc395;
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
 }
