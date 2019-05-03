@@ -137,13 +137,13 @@ img {
 .wrapper {
   max-width: 1024px;
   margin: 0 auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 @media screen and (max-width: 720px) {
   .wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 /*
