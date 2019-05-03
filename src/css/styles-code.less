@@ -83,16 +83,16 @@ header{
                 ul{
                     .col();
                     .size(12);
-                    padding: 10px 0;
+                    padding: 7px 0;
                     
 
                     li{
                         display:inline;
                         font-size: 21px;
-                        padding:0 20px;
+                        padding:0 19px;
                         box-sizing: border-box;
-                        &:not(:last-of-type){
-                            border-right: 2px solid;
+                        &:not(:first-of-type){
+                            border-left: 1px solid;
                             border-color: @color_white;
                            
                         }
@@ -115,24 +115,37 @@ header{
         
         .slide{
             .row-flex();
-            justify-content: center;
+            justify-content: start;
+            margin-top: 65px;
             div{
                 .col();
                 
             }
             .img{
-                .size(5);
+                .size(5.3);
+                text-align: center;
             }
             .slide_text{
                 .size(5);
+                padding: 5px 0 0 0px;
+                
+                h2{
+                    line-height: 57px;
+                    margin-bottom: 10px;
+                }
                 p{
                     font-family: 'Open Sans';
                     font-style: normal;
                     font-size: 17px;
                 	font-weight: 400;
                 	line-height: 28px;
+                    
                 }
-                button{
+                .button{ 
+                    display: inline-flex;
+                    align-items: center; 
+                    justify-content: center;
+                    margin: 30px 0;
                     width: 139px;
                 	height: 46px;
 	                border-radius: 5px;
@@ -140,8 +153,10 @@ header{
                     font-size: 27px;
                     color:#ffffff;
                     font-family: 'BebasNeue';
-                    
+                    border-color: @color_white;
                     border-width: 3px;
+                    border: 3px solid;
+                    text-align: center;
                     
                 }
             }
