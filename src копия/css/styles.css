@@ -1,0 +1,390 @@
+/* подключаем сетку в px */
+/* используем её примеси */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+legend {
+  color: #000;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*здесь прописанные общие стили*/
+/*
+
+@font-face {
+	font-family: 'BariolRegular';
+	src: url("../fonts/BariolRegular.eot");
+    src: url("../fonts/BariolRegular.woff") format("woff"),
+         url("../fonts/BariolRegular.ttf") format("truetype");
+         font-style: normal;
+         font-weight: normal;
+}
+*/
+h2 {
+  font-size: 61px;
+}
+h4 {
+  font-size: 27px;
+}
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.eot");
+  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url("../fonts/Lobster_1_4/Lobster_1_4.eot");
+  src: url("../fonts/Lobster_1_4/Lobster_1_4.woff") format("woff"), url("../fonts/Lobster_1_4/Lobster_1_4.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Myriad';
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (max-width: 720px) {
+  .wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.debugGrid {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+.debugGrid > div {
+  height: inherit;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (max-width: 720px) {
+  .debugGrid > div {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .debugGrid > div {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.debugGrid > div > div {
+  height: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.debugGrid > div > div > div {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(8.333333333333334% - 16px);
+  height: inherit;
+  outline: 1px solid #f90;
+  background: rgba(0, 0, 0, 0.2);
+}
+body {
+  background-color: #3ac4b9;
+  font-family: 'BebasNeue';
+}
+header {
+  background-color: #ffffff;
+}
+header .header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding: 10px 5px 10px 20px;
+}
+header .header .logo {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(16.666666666666668% - 16px);
+  font-family: "Lobster";
+  font-size: 49px;
+  color: #3bc3b5;
+}
+header .header .d3 {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(66.66666666666667% - 16px);
+  text-align: center;
+  align-self: center;
+}
+header .header .d3 form input {
+  width: 434px;
+  height: 31px;
+}
+header .header .bascet {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(8.333333333333334% - 16px);
+  text-align: right;
+  align-self: center;
+}
+header .header .total {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(8.333333333333334% - 16px);
+  text-align: left;
+  align-self: center;
+  color: #a1a1a1;
+  font-size: 33px;
+  font-family: 'BebasNeue';
+}
+#mainMeniu {
+  background-color: #4ccfc1;
+}
+#mainMeniu .navMeniu_Main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+#mainMeniu .navMeniu_Main ul {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(100% - 16px);
+  padding: 7px 0;
+}
+#mainMeniu .navMeniu_Main ul li {
+  display: inline;
+  font-size: 21px;
+  padding: 0 19px;
+  box-sizing: border-box;
+}
+#mainMeniu .navMeniu_Main ul li:not(:first-of-type) {
+  border-left: 1px solid;
+  border-color: #ffffff;
+}
+#mainMeniu .navMeniu_Main ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+#slidesMain {
+  color: #ffffff;
+}
+#slidesMain .slides {
+  margin-bottom: 45px;
+}
+#slidesMain .slides .slide {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+  justify-content: start;
+  margin-top: 65px;
+}
+#slidesMain .slides .slide div {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+#slidesMain .slides .slide .img {
+  width: calc(44.16666666666667% - 16px);
+  text-align: center;
+}
+#slidesMain .slides .slide .slide_text {
+  width: calc(41.66666666666667% - 16px);
+  padding: 5px 0 0 0px;
+}
+#slidesMain .slides .slide .slide_text h2 {
+  line-height: 57px;
+  margin-bottom: 10px;
+}
+#slidesMain .slides .slide .slide_text p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+}
+#slidesMain .slides .slide .slide_text .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  width: 139px;
+  height: 46px;
+  border-radius: 5px;
+  background: space;
+  font-size: 27px;
+  color: #ffffff;
+  font-family: 'BebasNeue';
+  border-color: #ffffff;
+  border-width: 3px;
+  border: 3px solid;
+  text-align: center;
+}
+#lineSlide {
+  color: #afafaf;
+  background-color: #ffffff;
+}
+#lineSlide .lineSlides {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+#lineSlide .lineSlides .lineSlide {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(33.333333333333336% - 16px);
+  padding: 27px 0 29px 0;
+}
+#lineSlide .lineSlides .lineSlide .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+#lineSlide .lineSlides .lineSlide .row .img {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: calc(58.333333333333336% - 16px);
+  text-align: center;
+}
+#lineSlide .lineSlides .lineSlide .row .text {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 25px;
+}
+#lineSlide .lineSlides .lineSlide .row .text h4 {
+  line-height: 25px;
+}
+#lineSlide .lineSlides .lineSlide .row .text .batton {
+  margin-top: 15px;
+  font-size: 19px;
+  background-color: #3cc395;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  width: 59px;
+  height: 32px;
+  border-radius: 3px;
+}

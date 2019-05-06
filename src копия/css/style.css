@@ -1,0 +1,154 @@
+/*здесь прописанные общие стили*/
+/*
+
+@font-face {
+	font-family: 'BariolRegular';
+	src: url("../fonts/BariolRegular.eot");
+    src: url("../fonts/BariolRegular.woff") format("woff"),
+         url("../fonts/BariolRegular.ttf") format("truetype");
+         font-style: normal;
+         font-weight: normal;
+}
+*/
+h2 {
+  font-size: 61px;
+}
+h4 {
+  font-size: 27px;
+}
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.eot");
+  src: url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeue Regular/BebasNeue Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url("../fonts/Lobster_1_4/Lobster_1_4.eot");
+  src: url("../fonts/Lobster_1_4/Lobster_1_4.woff") format("woff"), url("../fonts/Lobster_1_4/Lobster_1_4.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Myriad';
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+legend {
+  color: #000;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (max-width: 720px) {
+  .wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+/*
+.debugGrid{
+    .debug(rgba(0, 0, 0, 0.5), 1px solid #f90)
+}
+
+*/
