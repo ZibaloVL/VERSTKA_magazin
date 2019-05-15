@@ -20,6 +20,12 @@ function html(){
 				.pipe(gulpif(isSync, browserSync.stream()));
 }
 
+function jsFile(){
+	return gulp.src('./src/js/**/*')
+				.pipe(gulp.dest('./build/js'))
+				.pipe(gulpif(isSync, browserSync.stream()));
+}
+
 function styles(){
 	return gulp.src('./src/css/+(styles|styles-nocalc|ie-9).less')
 			   .pipe(gulpif(isDev, sourcemaps.init()))
@@ -65,6 +71,8 @@ function watch(){
 	gulp.watch('./src/css/**/*.less', styles);
 	gulp.watch('./src/**/*.html', html);
 	gulp.watch('./src/fonts/**/*.*', fonts);
+	gulp.watch('./src/js/**/*.*', fonts);
+
 }
 
 function grid(done){
@@ -80,7 +88,7 @@ function grid(done){
 }
 
 const build = gulp.series(clear, 
-						gulp.parallel(html, styles, images, fonts)
+						gulp.parallel(html, styles, images, fonts, jsFile)
 					);
 
 gulp.task('build', build);
